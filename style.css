@@ -1,0 +1,8 @@
+body {
+	background-color: #34495E;
+	color: white;
+}
+
+.col-md-4 {
+	max-width: 100%;
+}
