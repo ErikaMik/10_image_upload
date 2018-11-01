@@ -37,9 +37,9 @@ $uploads = array_diff($all_files, ['..', '.']);
 			<h1>Gallery</h1><br>
 		</div>
 		<div class="row">
-			<form action="index.php" method="post" enctype="multipart/form-data">
+			<form action="index.php" method="post" enctype="multipart/form-data" class="input-group mb-2">
 				<div class="custom-file">
-					<input type="file" class="custom-file-input" id="image" name="fileToUpload">
+					<input type="file" class="custom-file-input" name="fileToUpload">
 					<label class="custom-file-label bg-dark text-light" for="image">Choose file</label>
 				</div>
 				<div id="in" class="input-group-append">
