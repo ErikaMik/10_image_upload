@@ -33,27 +33,28 @@ $uploads = array_diff($all_files, ['..', '.']);
 </head>
 <body>
 	<div class="container">
-		<div class="row">
+		<div class="row shadow-lg p-3 mb-5 bg-ifo rounded">
 			<h1>Gallery</h1><br>
 		</div>
 		<div class="row">
 			<form action="index.php" method="post" enctype="multipart/form-data">
-				Select image to upload:
-				<input type="file" name="fileToUpload" id="fileToUpload">
-				<input type="submit" class="btn btn-info" value="Upload Image" name="submit">
+				<div class="custom-file">
+					<input type="file" class="custom-file-input" id="image" name="fileToUpload">
+					<label class="custom-file-label bg-dark text-light" for="image">Choose file</label>
+				</div>
+				<div id="in" class="input-group-append">
+					<input class="btn btn-outline-info btn-block" name="submit" type="submit" value="Upload">
+				</div>
 			</form>
 		</div>
-		<div class="row">
+		<div class="row shadow-lg p-3 mb-5 bg-ifo rounded">
 			<?php foreach ($uploads as $upload) {
-				echo "<div class='col-md-4'>";
+				echo "<div id='box' class='col-md-4'>";
 				echo "<img class='pict' src='uploads/$upload'>";
 				echo "</div>";
 			} 
 			?>
 		</div>
-			<!-- <?php if ($success) {
-			echo "valio";
-		} ?> -->
 	</div>	
 </div>
 </body>

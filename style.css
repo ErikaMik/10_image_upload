@@ -6,3 +6,11 @@ body {
 .pict {
 	width: 100%;
 }
+
+#box {
+	padding-top: 30px;
+}
+
+#in {
+	padding-top: 10px;
+}
