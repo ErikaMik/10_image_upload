@@ -46,7 +46,7 @@ $uploads = array_diff($all_files, ['..', '.']);
 		<div class="row">
 			<?php foreach ($uploads as $upload) {
 				echo "<div class='col-md-4'>";
-				echo "<img src='uploads/$upload'>";
+				echo "<img class='pict' src='uploads/$upload'>";
 				echo "</div>";
 			} 
 			?>
